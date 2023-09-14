@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/output.css">
+    <script src="https://kit.fontawesome.com/ea044d41b3.js" crossorigin="anonymous"></script>
     <title>Dwi Panca Mahardhika</title>
 </head>
 <body class="bg-gray-100 font-sans">
@@ -34,48 +35,87 @@
 
     <!-- About Me Section -->
     <section id="about" class="bg-[#636363] relative text-white py-16">
-        <div class="container mx-auto text-center">
-            <div class="max-w-2xl mx-auto"> <!-- Adjust the maximum width as needed -->
-                <h2 class="text-3xl font-semibold">Hi, I'm Dwi. Welcome to my site!</h2>
-                <p class="text-lg font-medium mt-4">I've been learning to code since I was in high school, especially about Front-End Development.</p>
-                <p class="text-lg font-medium mt-4">As someone who is so passionate about creating things and solving problems, this portfolio website should be a great place to showcase my projects.</p>
-            </div>
-        </div>
-    </section>
+      <div class="container mx-auto text-center">
+          <div class="max-w-2xl mx-auto">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Hi, I'm Dwi. Welcome to my site!</h2>
+              <p class="text-base md:text-lg lg:text-xl font-medium mt-4">I've been learning to code since I was in high school, especially about Front-End Development.</p>
+              <p class="text-base md:text-lg lg:text-xl font-medium mt-4">As someone who is so passionate about creating things and solving problems, this portfolio website should be a great place to showcase my projects.</p>
+          </div>
+      </div>
+  </section>
 
     <!-- Projects Section -->
     <section id="projects" class="bg-white py-16">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-semibold">Projects</h2>
-            <div class="py-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
-                <!-- First project box -->
-                <div class="bg-gray-200 p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo euismod, vehicula urna id, suscipit nunc.</p>
-                    <a href="#" class="text-blue-500 hover:underline block mt-4">Learn More</a>
+            <div class="container flex flex-col justify-center mx-auto">
+                <div class="grid gap-6 py-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                    <a href="https://mahardikadwi.github.io/bookstore-app/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                      <div class="relative">
+                        <div class="aspect-w-3 aspect-h-2">
+                          <img src="src/images/bookstore.PNG" alt="" class="w-full object-cover rounded-t-lg">
+                        </div>
+                      </div>
+                      <div class="bg-white bg-opacity-70 text-start py-4 px-5">
+                        <h2 class="text-2xl font-semibold">bookstore.id</h2>
+                        <p class="text-gray-600 text-sm pt-2">an ecommerce app where user can buy their favorite books</p>
+                        <br>
+                        <p class="text-gray-600 text-sm">Language used: HTML, CSS, Javascript</p>
+                      </div>
+                    </a>
+                    <a href="https://mahardikadwi.github.io/ticket-concert-website/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                      <div class="relative">
+                        <div class="aspect-w-3 aspect-h-2">
+                          <img src="src/images/festival.PNG" alt="" class="w-full object-cover rounded-t-lg">
+                        </div>
+                      </div>
+                      <div class="bg-white bg-opacity-70 text-start py-4 px-5">
+                        <h2 class="text-2xl font-semibold">Concerto</h2>
+                        <p class="text-gray-600 text-sm pt-2">Music festival homepage</p>
+                        <br>
+                        <p class="text-gray-600 text-sm ">Language used: HTML, CSS, Javascript</p>
+                      </div>
+                    </a>
+                    <a href="https://mahardikadwi.github.io/jual-rumah/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                      <div class="relative">
+                        <div class="aspect-w-3 aspect-h-2">
+                          <img src="src/images/jual-rumah.PNG" alt="" class="w-full object-cover rounded-t-lg">
+                        </div>
+                      </div>
+                      <div class="bg-white bg-opacity-70 text-start py-4 px-5">
+                        <h2 class="text-2xl font-semibold">JualRumah.id</h2>
+                        <p class="text-gray-600 text-sm pt-2">Real Estate Business website</p>
+                        <br>
+                        <p class="text-gray-600 text-sm ">Language used: HTML, CSS (Tailwind), Javascript(Jquery), swiper.js</p>
+                      </div>
+                    </a>                 
                 </div>
-    
-                <!-- Second project box -->
-                <div class="bg-gray-200 p-4 rounded-lg">
-                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo euismod, vehicula urna id, suscipit nunc.</p>
-                    <a href="#" class="text-blue-500 hover:underline block mt-4">Learn More</a>
-                </div>
-            </div>
+              </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="bg-gray-700 text-white py-16">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold">Contact</h2>
+        <div class="container mx-auto text-center flex flex-col gap-4 items-center justify-center p-10">
+            <h2 class="text-3xl font-semibold">Interested in working together? Let's connect!</h2>
+            <a href="#">
+              <p class="border rounded px-4 py-2 w-[350px]"><i class="fa fa-comment-o mr-3"></i>Start a Conversation</p>
+            </a>
+            <p class="font-bold">OR</p>
+            <div class="flex flex-col items-center">
+              <p class="font-semibold">Check out my other profiles</p>
+              <div class="icons flex gap-4 mt-4">
+                  <a href="https://github.com/mahardikadwi"><i class="fa fa-github fa-2x"></i></a>
+                  <a href="https://www.linkedin.com/in/dwi-panca-mahardhika-bb473b252/"><i class="fa fa-linkedin fa-2x"></i></a>
+              </div>
+          </div>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto text-center">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p>&copy; 2023 Dwi Panca Mahardhika. All rights reserved.</p>
         </div>
     </footer>
 </body>
