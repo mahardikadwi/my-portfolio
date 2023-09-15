@@ -9,26 +9,25 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Navigation -->
-    <nav class="bg-white p-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-black">
-                <a href="/">
-                    <p class="font-semibold text-2xl">DPM</p>
-                </a>
-            </div>
-            <ul class="flex space-x-10">
-                <li class="nav-links font-semibold"><a href="#about">About me</a></li>
-                <li class="nav-links font-semibold"><a href="#projects">Projects</a></li>
-                <li class="nav-links font-semibold"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="bg-white p-4 md:p-10 flex items-center justify-center md:justify-between">
+      <div class="text-black">
+          <a href="index.html">
+              <p class="font-semibold text-2xl text-center md:text-left">DPM</p>
+          </a>
+      </div>
+      <ul class="hidden md:flex space-x-16">
+          <li class="nav-links font-semibold"><a href="#about">About me</a></li>
+          <li class="nav-links font-semibold"><a href="#projects">Projects</a></li>
+          <li class="nav-links font-semibold"><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
     <!-- Hero Section -->
     
     <header class="bg-white py-16">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-semibold py-5">Hi, my name is Dwi Panca Mahardhika</h1>
-            <p class="text-xl font-semibold text-gray-600 py-5">an aspiring Front-End developer</p>
+            <h1 class="md:text-4xl text-2xl font-semibold py-5">Hi, my name is Dwi Panca Mahardhika</h1>
+            <p class="md:text-xl text-lg font-semibold text-gray-600 py-5">an aspiring Front-End developer</p>
             <img src="src/images/hero-devices_gray.svg" alt="Hero Image" class="mt-[73px] mx-auto w-2/3 max-w-screen-lg">
         </div>
     </header>
@@ -37,20 +36,20 @@
     <section id="about" class="bg-[#636363] relative text-white py-16">
       <div class="container mx-auto text-center">
           <div class="max-w-2xl mx-auto">
-              <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold">Hi, I'm Dwi. Welcome to my site!</h2>
-              <p class="text-base md:text-lg lg:text-xl font-medium mt-4">I've been learning to code since I was in high school, especially about Front-End Development.</p>
-              <p class="text-base md:text-lg lg:text-xl font-medium mt-4">As someone who is so passionate about creating things and solving problems, this portfolio website should be a great place to showcase my projects.</p>
+              <h2 class="text-xl md:text-3xl lg:text-4xl font-semibold">Hi, I'm Dwi. Welcome to my site!</h2>
+              <p class="text-sm md:text-lg lg:text-xl font-medium mt-4">I've been learning to code since I was in high school, especially about Front-End Development.</p>
+              <p class="text-sm md:text-lg lg:text-xl font-medium mt-4">As someone who is so passionate about creating things and solving problems, this portfolio website should be a great place to showcase my projects.</p>
           </div>
       </div>
   </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-white py-16">
+    <section id="projects" class="bg-white py-8 md:py-16">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold">Projects</h2>
-            <div class="container flex flex-col justify-center mx-auto">
+            <h2 class="md:text-3xl text-xl font-semibold">Projects</h2>
+            <div class="container px-4 sm:px-6 lg:px-8 flex flex-col justify-center mx-auto">
                 <div class="grid gap-6 py-6 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-                    <a href="https://mahardikadwi.github.io/bookstore-app/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                    <a href="https://mahardikadwi.github.io/bookstore-app/" class="rounded-lg flex flex-col border border-gray-300 ">
                       <div class="relative">
                         <div class="aspect-w-3 aspect-h-2">
                           <img src="src/images/bookstore.PNG" alt="" class="w-full object-cover rounded-t-lg">
@@ -63,7 +62,7 @@
                         <p class="text-gray-600 text-sm">Language used: HTML, CSS, Javascript</p>
                       </div>
                     </a>
-                    <a href="https://mahardikadwi.github.io/ticket-concert-website/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                    <a href="https://mahardikadwi.github.io/ticket-concert-website/" class="rounded-lg flex flex-col border border-gray-300">
                       <div class="relative">
                         <div class="aspect-w-3 aspect-h-2">
                           <img src="src/images/festival.PNG" alt="" class="w-full object-cover rounded-t-lg">
@@ -76,7 +75,7 @@
                         <p class="text-gray-600 text-sm ">Language used: HTML, CSS, Javascript</p>
                       </div>
                     </a>
-                    <a href="https://mahardikadwi.github.io/jual-rumah/" class="rounded-lg flex flex-col xl:border border-gray-300 hover:shadow-md transition duration-300">
+                    <a href="https://mahardikadwi.github.io/jual-rumah/" class="rounded-lg flex flex-col border border-gray-300">
                       <div class="relative">
                         <div class="aspect-w-3 aspect-h-2">
                           <img src="src/images/jual-rumah.PNG" alt="" class="w-full object-cover rounded-t-lg">
@@ -99,7 +98,7 @@
         <div class="container mx-auto text-center flex flex-col gap-4 items-center justify-center p-10">
             <h2 class="text-3xl font-semibold">Interested in working together? Let's connect!</h2>
             <a href="#">
-              <p class="border rounded px-4 py-2 w-[350px]"><i class="fa fa-comment-o mr-3"></i>Start a Conversation</p>
+              <p class="border rounded px-4 py-2 w-64 md:w-[350px]"><i class="fa fa-comment-o mr-3"></i>Start a Conversation</p>
             </a>
             <p class="font-bold">OR</p>
             <div class="flex flex-col items-center">
